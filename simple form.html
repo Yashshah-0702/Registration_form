@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        
+        
+        .input{
+            background-color: white;
+        }    
+        .input:hover{
+            background-color: red;
+        }
+        
+        body{
+            background-color: rgba(0, 255, 255, 0.4);
+        }
+        table{
+            background-color: rgb(255, 255, 255,0.7);
+            padding: 40px;
+        }
+        table,th,tr,td{
+            
+            margin-left: 30%;
+        }
+        .margin{
+            padding-left: 120px;
+        }
+        button:hover{
+            background-color: aqua;
+            border: 2px solid red;
+
+        }
+    </style>
+    <title>TABLE</title>
+</head>
+
+<body>
+    <table>
+        <th class="margin">REGISTRATION FORM</th>
+        <tr>
+            <td>FIRST NAME</td>
+            <td><input type="text" required placeholder="first name" name="fname"></td>
+        </tr>
+        <tr>
+            <td>LAST NAME</td>
+            <td><input type="text" required placeholder="last name" name="lname"></td>
+        </tr>
+        <tr>
+            <td>EMAIL ID</td>
+            <td><input type="email" required placeholder="abc@gmail.com" name="email"></td>
+        </tr>
+        <tr>
+            <td>EMAIL ID PASSWORD</td>
+            <td><input type="password" required placeholder="1234567890" name="password"></td>
+        </tr>
+        <tr>
+            <td>MOBILE NUMBER</td>
+            <td><input type="text" required placeholder="9326871267" name="mobile" maxlength="10"></td>
+        </tr>
+        <tr>
+            <td>DATE OF BIRTH</td>
+            <td><input type="date" required placeholder="01-01-0001" name="date of birth"></td>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <td><textarea name="address" cols="40" rows="2"></textarea></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td><input type="radio" name="gender" value="male">MALE <input type="radio" name="gender"
+                    value="female">FEMALE</td>
+        </tr>
+        <tr>
+            <td>YEAR OF PASSING SSC</td>
+            <td><select name="passing year" required>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>PERCENTAGE IN SSC</td>
+            <td><input type="text" required maxlength="4" name="percentage1"></td>
+        </tr>
+        <tr>
+            <td>MARKSHEET PHOTO OF SSC</td>
+            <td><input type="file" required name="marksheet1" ></td>
+        </tr>
+        <tr>
+            <td>YEAR OF PASSING HSC</td>
+            <td><select name="passing year">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>PERCENTAGE IN HSC</td>
+            <td> <input type="text"  maxlength="4" name="percentage2"></td>
+        </tr>
+        <tr>
+            <td>MARKSHEET PHOTO OF HSC</td>
+            <td><input type="file"  name="marksheet2" ></td>
+        </tr>
+        <tr>
+            <td>COLLEDGE NAME</td>
+            <td><input type="text" name="colledge"></td>
+        </tr>
+        <tr>
+            <td>PROGRAM </td>
+            <td><input type="text" name="program"></td>
+        </tr>
+        <tr>
+            <td> STREAM</td>
+            <td><select name="stream"><br><br>
+                <option value="cs">CS</option>
+                <option value="ce">CE</option>
+                <option value="mech">MECH</option>
+                <option value="civil">CIVIL</option>
+                <option value="el">EL</option>
+                <option value="ec">EC</option>
+                <option value="mettulargy">METTULARGY</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>SEM</td>
+            <td> <select name="sem"><br><br>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+            </select> </td>
+        </tr>
+        <tr>
+            <td>SELECT YOUR COURSE</td>
+            <td><input type="checkbox" name="full stack"> FULL STACK DEVELOPMENT <br><br>
+                <input type="checkbox" name="data science">DATA SCIENCE <br><br>
+                <input type="checkbox" name="android">ANDROID DEVELOPMENT <br><br>
+                <input type="checkbox" name="developer">SOFTWARE DEVELOPER <br><br>
+                <input type="checkbox" name="marketing">DIGITAL MARKETING ><br><br></td>
+        </tr>
+        <tr>
+            <td>ID VERFIFICATION</td>
+            <td><input type="file" required name="id"></td>
+        </tr>
+        <tr>
+        <td style="padding-left: 30%;"><input class="input" type="submit" value="submit">
+        <input class="input" type="reset" value="reset"></td>
+        </tr>
+    </table>   
+</body>
+
+</html>
